@@ -359,7 +359,7 @@ function call_function(func_name, input, func_args = []) {
 
                     return -2;
                 }// else
-                alert('Good job! You\'ve passed all available levels. You can reload the page.');
+                window.alert('Good job! You\'ve passed all available levels. You can reload the page.');
                 edible = false;
                 return -2;
             } else if (poisoned) {
