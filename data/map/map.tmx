@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="7" height="6" tilewidth="32" tileheight="32" backgroundcolor="#000000" nextobjectid="26">
+ <tileset firstgid="1" name="grass" tilewidth="32" tileheight="32" tilecount="18" columns="3">
+  <image source="../img/map/tallgrass.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="19" name="food-ham" tilewidth="32" tileheight="32" tilecount="400" columns="20">
+  <image source="../img/map/farming_fishing.png" width="640" height="640"/>
+ </tileset>
+ <tileset firstgid="419" name="fence" tilewidth="32" tileheight="32" tilecount="18" columns="3">
+  <image source="../img/map/fence.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="437" name="animals" tilewidth="32" tileheight="32" tilecount="72" columns="9">
+  <image source="../img/dog.png" width="288" height="256"/>
+ </tileset>
+ <layer name="ground" width="7" height="6">
+  <data encoding="csv">
+7,8,8,8,8,8,9,
+10,11,11,11,11,11,12,
+10,11,11,11,11,11,12,
+10,11,11,11,11,11,12,
+10,11,11,11,11,11,12,
+13,14,14,14,14,14,15
+</data>
+ </layer>
+ <objectgroup name="object_layer">
+  <object id="1" name="mainPlayer" x="3" y="33" width="32" height="32">
+   <properties>
+    <property name="frameheight" type="int" value="32"/>
+    <property name="framewidth" type="int" value="32"/>
+    <property name="image" value="dog"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="collision">
+  <object id="4" name="fence" x="46" y="47" width="131" height="7"/>
+  <object id="5" name="fence" x="174" y="47" width="4" height="104"/>
+  <object id="6" name="fence" x="46" y="144" width="132" height="6"/>
+  <object id="7" name="fence" x="45" y="50" width="4" height="100"/>
+  <object id="8" name="food" x="67" y="13" width="23" height="15"/>
+  <object id="9" name="food" x="158" y="14" width="34" height="22"/>
+  <object id="10" name="food" x="65" y="102" width="29" height="25"/>
+  <object id="12" name="food" x="128" y="65" width="31" height="27"/>
+  <object id="15" name="food" x="65" y="155" width="31" height="19"/>
+  <object id="21" name="fence" x="-11" y="6" width="14" height="175"/>
+  <object id="22" name="fence" x="4" y="179" width="222" height="19"/>
+  <object id="23" name="fence" x="227" y="-6" width="19" height="189"/>
+  <object id="24" name="fence" x="4" y="1" width="222" height="10"/>
+ </objectgroup>
+ <layer name="furnishing" width="7" height="6">
+  <data encoding="csv">
+0,0,0,0,0,0,0,
+0,425,434,0,436,427,0,
+0,423,0,0,0,423,0,
+0,423,0,0,0,423,0,
+0,431,420,420,420,433,0,
+0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="door" width="7" height="6">
+  <data encoding="csv">
+0,0,0,0,0,0,0,
+0,0,0,435,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="level_1" width="7" height="6">
+  <data encoding="csv">
+0,0,0,0,0,120,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="level_2" width="7" height="6">
+  <data encoding="csv">
+0,0,360,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,323,0,0,
+0,0,200,0,0,0,0,
+0,0,259,0,0,0,0,
+0,0,279,0,0,0,0
+</data>
+ </layer>
+</map>

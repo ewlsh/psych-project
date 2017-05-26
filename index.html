@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <!-- <script src="./programming.js"></script> -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="boxbox" class="hbox">
+        <div id="box2" class="hbox-child">
+        <textarea id="input"></textarea>
+        <button id="submit" onmousedown="exec(document.getElementById('input').value)">Run Code</textarea>
+        </div>
+<div id="screen" class="hbox-child"></div>
+<!-- Canvas placeholder -->
+
+</div>
+<!-- melonJS Library -->
+<!-- build:js js/app.min.js -->
+<script type="text/javascript" src="lib/melonJS-min.js"></script>
+
+
+<!-- Game Scripts -->
+<script type="text/javascript" src="js/game.js"></script>
+<script type="text/javascript" src="build/js/resources.js"></script>
+
+<script type="text/javascript" src="js/entities/entities.js"></script>
+<script type="text/javascript" src="js/entities/HUD.js"></script>
+
+<script type="text/javascript" src="js/screens/title.js"></script>
+<script type="text/javascript" src="js/screens/play.js"></script>
+
+<script type="text/javascript" src="js/programming.js"></script>
+
+
+<!-- Bootstrap -->
+<script type="text/javascript">
+    window.onReady(function onReady() {
+        game.onload();
+    });
+</script>
+
+</body>
+<br>
+</body>
+</html>
