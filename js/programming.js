@@ -356,15 +356,36 @@ function call_function(func_name, input, func_args = []) {
                     functions = {};
 
                     me.levelDirector.loadLevel("map" + ++level);
+
+                    return -2;
                 }// else
-                //alert('Good job! You\'ve passed all available levels.');
+                alert('Good job! You\'ve passed all available levels. You can reload the page.');
                 edible = false;
                 return -2;
             } else if (poisoned) {
 
                 // alert('You\'ve been poisoned!');
             } else {
-                //    alert('That isn\'t food!');
+                if (level > 1) {
+                    move_x = 0;
+                    move_y = 0;
+                    edible = false;
+                    poisoned = false;
+                    isagate = false;
+                    eating = false;
+                    openagate = false;
+                    opened = false;
+                    moving = false;
+                    moving_params = [];
+                    level = 1;
+
+                    goutput = "";
+                    functions = {};
+
+                    me.levelDirector.loadLevel("map1");
+
+                    return -2;
+                }
             }
 
             return 0;
